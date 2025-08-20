@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Gh's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(135deg, #181c2f 0%, #232946 100%);
+            color: #eaeaea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: #232946ee;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(24,28,47,0.28);
+            padding: 40px 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+            color: #eebf6e;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        p {
+            font-size: 1.15rem;
+            margin-bottom: 32px; 
+            color: #b8c1ec;
+            text-align: center;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-bottom: 32px;
+            width: 100%;
+            justify-items: center;
+        }
+        .project-card {
+            background: linear-gradient(120deg, #232946 0%, #181c2f 100%);
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(24,28,47,0.18);
+            padding: 20px;
+            text-align: center;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .project-card:hover {
+            box-shadow: 0 8px 32px rgba(238,191,110,0.18);
+            transform: translateY(-4px) scale(1.03);
+        }
+        .project-card img {
+            width: 100%;
+            max-width: 220px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(24,28,47,0.18);
+        }
+        .project-card a {
+            display: inline-block;
+            margin-top: 8px;
+            font-weight: 700;
+            color: #eebf6e;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        .project-card a:hover {
+            color: #f9d923;
+        }
+        .links {
+            width: 100%;
+            text-align: center;
+        }
+        .links a {
+            margin-left: 18px;
+            color: #eebf6e;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .links a:first-child {
+            margin-left: 0;
+        }
+        .links a:hover {
+            color: #f9d923;
+        }
+        @media (max-width: 700px) {
+            .container {
+                padding: 18px 6px;
+            }
+            .projects {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ali Gh's Portfolio</h1>
+        <p>Welcome to my portfolio! Here you can find my contact information and a list of some of my projects.</p>
+        <div class="projects">
+            <div class="project-card">
+                <img src="./assets/images/image.png" alt="Birthday Invite Image">
+                <a href="./public/birthday-invite.html">Birthday Invite</a>
+            </div>
+            <div class="project-card">
+                <img src="./assets/image.png" alt="Movie Ranking Image">
+                <a href="./public/movie-ranking.html">Movie Ranking</a>
+            </div>
+        </div>
+        <div class="links">
+            <a href="./public/about.html">About Me</a>
+            <a href="./public/contact.html">Contact Me</a>
+        </div>
+    </div>
+</body>
+</html>
